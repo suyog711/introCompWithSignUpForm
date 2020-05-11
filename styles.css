@@ -1,0 +1,245 @@
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url('./images/bg-intro-mobile.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 70px 25px 50px 25px;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+}
+.sub-heading {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+.trial-btn {
+  background-color: hsl(248, 32%, 49%);
+  border: 1px solid hsl(248, 32%, 49%);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 50px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.form-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+input {
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  padding: 20px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(249, 10%, 26%);
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+.claim-btn {
+  background-color: hsl(154, 59%, 51%);
+  border: 0px solid hsl(154, 59%, 51%);
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px 0px;
+  width: 100%;
+  box-shadow: 0px -5px rgba(0, 0, 0, 0.2) inset;
+}
+
+.term {
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  padding: 0 30px;
+}
+
+.term > a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}
+
+.error-msg {
+  display: none;
+  text-align: right;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  margin: 0px;
+}
+.error-mark {
+  width: 30px;
+}
+.error-icon {
+  display: none;
+  position: absolute;
+  right: 80px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 960px) {
+  body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url('./images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center center;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px;
+  }
+
+  .left {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  .right {
+    flex: 1;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    line-height: 60px;
+    padding-right: 120px;
+  }
+  .sub-heading {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 120px;
+    text-align: left;
+  }
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .trial-btn {
+    background-color: hsl(248, 32%, 49%);
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .input-wrapper {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    padding: 20px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    width: inherit;
+    align-items: center;
+    color: hsl(249, 10%, 26%);
+  }
+
+  input:focus {
+    outline: 0;
+    border: 1px solid hsl(249, 10%, 26%);
+  }
+
+  .claim-btn {
+    background-color: hsl(154, 59%, 51%);
+    border: 0px solid hsl(154, 59%, 51%);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0px;
+    width: 100%;
+    box-shadow: 0px -5px rgba(0, 0, 0, 0.2) inset;
+  }
+
+  .term {
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+  }
+
+  .term > a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+  }
+
+  .error-mark {
+    width: 30px;
+  }
+  .error-icon {
+    display: none;
+    position: absolute;
+    right: 80px;
+    margin-top: 15px;
+  }
+
+  .error-msg {
+    display: none;
+    text-align: right;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    margin: 0px;
+  }
+}
